@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+    
+                .nav_tabs {
+                float: right;
+                height: 50px;
+                width: auto;
+                padding: 15px;
+				margin-right: 10px;
+                background-color: orange;
+                transition-timing-function: ease-in-out;
+                transition-property: all;
+                transition-duration: 1s;
+				}
+				
+				            
+            .nav_tabs:hover {
+				cursor: pointer;
+				}
+
+				a {
+                text-decoration: none;
+                font-size: 24px;
+                text-transform: uppercase;
+                font-family: verdana;
+				margin-left:20px;
+				float: left;
+				}
+    
+                a:hover {
+                    color: green;
+                }
+    
+
+				#s1 {
+				display:none;
+				}
+
+				img {
+                height: 40px;
+                width: 40px;
+                float: left;
+				}
+    
+    </style>
+
+    <script>
+        function displ1()
+        {
+            s1.style.display='block';
+        }
+        
+        function disps1()
+        {
+            s1.style.display='none';   
+        }
+        
+    </script>
+</head>
+    <body>
+    <div class="nav_tabs" onmouseover="displ1()"onmouseout="disps1()">
+         <img src="images/home.png" id="menuicon" />
+			<span id="s1" >
+	<a href="#">   users </a>
+	<a href="#">   groups </a>
+	<a href="./cl_fn.html">   logout </a>
+	<a href="#" style="visibility:hidden">   allusers </a>
+					</span>	
+    </div>
+    
+    </body>
+</html>

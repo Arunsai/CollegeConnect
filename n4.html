@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <style>
+            
+            .nav_tabs {
+                height: 100px;
+                width: 100%;
+				//margin-top: -20px; 
+                background-color: lightgreen;
+            }    
+            
+            #content {
+                background-color: powderblue;
+                font-family: magneto;
+                font-size: 45px;    
+                height: 400px;
+                width: 100%;
+                //margin-top: 20px;
+                
+            }
+            
+            .nav_tabs ul li {
+                float: left;
+                height: 30px;
+                width: 30px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-LEFT: 10px;
+                margin-righT: 10px;
+                background-color: orange;
+                font-family: verdana;
+                font-size: 20px;
+				border-radius: 30px;
+                list-style-type: none;
+                transition-property: all;
+                transition-duration: .3s;
+                
+            }
+            
+            .nav_tabs ul li:hover {
+                background-color: white;
+                width: 300px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+                padding-right: 0px;
+                font-family: magneto;
+                font-size: 28px;
+                color: skyblue;
+                font-weight: bold;
+                cursor: pointer;
+                
+            }
+			a {
+			text-decoraTION: NONE;
+			color: gray;
+			}
+			a:hover {
+			color:purple;
+			}
+			
+			#s0,#s1,#s2,#s3,#s4 {
+			display:none;
+			}
+        
+        </style>
+        <script>
+		
+		
+			function displ4()
+			{
+				s4.style.display='block';
+			 }
+			function disps4() {
+				s4.style.display='none';
+			}
+		
+       
+        </script>    
+    </head>   
+    
+    <body>
+        
+               <div class="nav_tabs">
+                <ul>
+           
+			<li id="t4" onmouseover="displ4()" onmouseout="disps4()">
+				<img src="./im1.jpg" height="30px" width="30px"  style="float:left">
+				<span id="s4" >
+					<a href="#">O1</a>
+					<a href="#">O2</a> 
+					<a href="#">O3</a>
+					<a href="#">O4</a>
+				</span>	
+			</li>
+				</ul>
+        </div>
+        
+        
+        
+</body>
+</html>
